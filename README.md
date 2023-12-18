@@ -61,3 +61,64 @@ Número de casosingresados en UCI
 **num_def** 
 
 Número de defunciones
+
+**country_region_code**
+
+Código de España para google
+
+
+**countr_region**
+
+Indica que el país es España
+
+
+**sub_region_1**
+
+Nombre de la Comunidad autónoma
+
+
+**sub_region_2**
+
+Nombre de la Provincia
+
+**iso_3166_2_code**
+
+Código iso de la provincia
+
+
+**place_id**
+
+ID del lugar
+
+**date**
+
+Columna duplicada de fecha
+
+**retail_and_recreation_percent_change_from_baseline**
+
+Porcentaje de cambio con respecto a una medida de referencia base en la afluencia de público a lugares de comercio y ocio
+
+
+**grocery_and_pharmacy_percent_change_from_baseline**
+
+Porcentaje de cambio con respecto a una medida de referencia base en la afluencia de público a lugares de supermercados y farmacia
+
+
+**parks_percent_change_from_baseline**
+
+Porcentaje de cambio con respecto a una medida de referencia base en la afluencia de público a parques
+
+
+**transit_stations_percent_change_from_baseline**
+
+Porcentaje de cambio con respecto a una medida de referencia base en la afluencia de público estaciones de transporte
+
+
+**workplaces_percent_change_from_baseline**
+
+Porcentaje de cambio con respecto a una medida de referencia base en la afluencia de público estaciones a lugares de trabajo
+
+
+**residential_percent_change_from_baseline**
+
+Porcentaje de cambio con respecto a una medida de referencia base en la afluencia de público estaciones a lugares de residencia
