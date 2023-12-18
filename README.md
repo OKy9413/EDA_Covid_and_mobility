@@ -14,6 +14,8 @@ Aquí dejo una relación de las columnas y una descripción de las mismas:
 **provincia_iso** 
 
 Código ISO de la provincia de residencia. NC (no consta)
+
+
 **fecha**
 
 Casos: En los casos anteriores al 11 de mayo, se utiliza la fecha de diagnóstico, en su
