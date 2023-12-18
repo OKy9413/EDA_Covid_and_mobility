@@ -1,4 +1,4 @@
-El archivo "eda.csv" es un dataset que contiene inforación de varios datasets diferentes. 
+Los archivos "eda_parte_X.csv" forman un dataset que contiene inforación cruzada de varios datasets diferentes. 
 
 Por un lado incorporamos la información sobre movilidad de los datos que publicó google agrupados por diferentes categorías de lugares, 
 en los que se representa la variación de concurrencia de personas a esos lugares. Por otro lado recopilaos la información sobre la incidencia del coronavirus en España.
