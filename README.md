@@ -37,6 +37,45 @@ De ahí salen varias preguntas: <br>
 
 Una vez que tenemos los dos dataset preparados que vamos a usar en este EDA toca unirlos, para ello se hace un *merge* de df_google sobre df_covid19 por las columnas fecha y provincia. Columnas estas previamente armonizadas. 
 
+### LIMPIEZA
+
+- Borramos la columna *Unnamed: 0*.
+- Recortamos el dataframe por las primeras fechas ya que no hay datos de google antes del 15-02-2020. 
+- Tratamos varios nulos en las columnas de las provincias que tiene como resultado prescindir de los datos sobre Ceuta y Melilla. 
+- Además observamos una serie de nulos que corresponden a situaciónes en las que google ha considerado que no tenían sufiente calidad los datos que había recogido. <br>
+    Son casos puntuales, por lo que los rellenamos con la media de los valores del día anterior y posterior.
+- Dropeamos entonces las columnas *['date', 'provincia_iso_g', 'country_region_code', 'iso_3166_2_code']*.
+- Renombramos y reordenamos las columnas.
+
+Y ya tenemos el dataset limpio y listo para el estudio.
+
+### ESTUDIO
+
+- Cambio de las fechas a *type datetime*.
+
+Comienzo del Análisis univariante:
+- Contrucción de la tabla resumen de análisis de los datos de las diferentes columnas con *nombre, type, prio, card, card%, class y mode*.
+- Gráficas sobre la distribución de los datos. Primero las Categóricas y luego las numéricas.
+
+Creamos nuevos subdataframes, agrupando por *fechas* y por *fechas y provincias*. Trabajaremos principalmente con la agrupación por *fechas*. 
+- Primero volvemos hacer el análizar el análisis univariante de las columnas numéricas.
+
+Aquí comienza el análisis bivariante:
+- Lo primero es hacer un análisis de los datos de la incidencia del covid en función del tiempo. Además suavizamos la curva para asumir fallas semanales en la recogida de datos. Ventana de 7 días. Usamos gráfica de líneas.
+- Realizamos diferentes gráficas para comprar las diferentes métricas de incidencia. Usaremos *num_casos* y *num_hosp* para lo siguiente.
+- Seguimos con un análsis temporal de los datos de afluencia de gente. También suavizamos con ventana de 7 días. Le superponemos la línea de *num_casos* para ver posibles correlaciones. Usamos gráfica de líneas.
+- Comparamos ahora directamente mediante mapas de calor cada una de las categorías de lugares de Google, primero con *num_casos*, y luego con también con el resto de métricas de incidencia. 
+- Así mismo hacemos una comparación de los mapas de calor anteriores con otro con un desfase de 15 días atendiendo al periodo de desactivación del contagio del covid.
+- Se observa, 
+    - primero que podría existir cierta correspondencia entre las métricas, 
+    - segundo se duda de la fiabildad de *num_casos*, 
+    - tercero parece haber más corresondencia con el desfase de 15 días.
+- Para tratar de aclarar esto buscamos una representación algo más clarificadora, y hacemos lo mismo con diagramas de puntos. Y nos aclaran dos cosas: <br>
+    - *num_casos* no es un buen dato ya que no parece reflejar bien la intensidad real de la epidemia por la imposibilidad de registrar todos los casos. Optamos por trabajar con *num_hosp*. <br>
+    - se confirma la correspondencia con el desfase.
+- Volvemos a hacer la comparación temporal de cada categoría de lugar esta vez con *num_hosp* y el análisis visual muestra mayor correspondencia.
+- Para terminar comprobamos la correlación de Pearson entre las columnas que no sale nada llamativo. Pero al hacer la correlación cruzada observamos correlaciones de en torno a 0.7 en la mayoría de ellas a 10 días. 
+
 ###  CONCLUSIONES
 
 - El mejor indicador epidemiológico parece ser el número de hospitalizaciones.
