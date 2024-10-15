@@ -23,15 +23,11 @@ De ahí salen varias preguntas: <br>
 
 ##### Por otro lado, podríamos verlo al revés, ¿influye los lugares frecuentados con el crecimiento de los datos de incidencia del covid?
 
-## OBTENCIÓN DE LOS DATOS
 
 ### DATASETS Y FUENTES ALTERNATIVAS DE DATOS
 
 *df_google* es un dataset publicado por Google que se puede descargar del siguiente enlace: [www.google.com/covid19/mobility/data_documentation](https://www.google.com/covid19/mobility/data_documentation.html?hl=es) <br>
 *df_covd19* es un dataset publicado por el [Instituto de Salud Carlos III (ISCIII)](https://www.isciii.es) y que puede encontrar en el siguiente enlace: [casos_hosp_uci_def_sexo_edad_provres.csv](https://cnecovid.isciii.es/covid19/resources/casos_hosp_uci_def_sexo_edad_provres.csv)
-
-Incluye aquí una vista del dataset o datasets de los que partirás para poder evaluar tu hipótesis. <br>
-También incluye el origen de estos datos y su fuente.
 
 -  Tras cargar *df_google* prescindimos de las columnas *metro_area y census_fips_code* ya que no aportan información. <br> 
     Posteriormente rellenamos la columna *sub_region_1* por faltar nombres de las provincias de las comunidades con una sola provincia. Comprobamos que están todas las provincias. <br>
