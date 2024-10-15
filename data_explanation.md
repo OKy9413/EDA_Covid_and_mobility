@@ -13,12 +13,12 @@ Aquí dejo una relación de las columnas y una descripción de las mismas:
 
 **provincia_iso** 
 
-Código ISO de la provincia de residencia. NC (no consta)
+  Código ISO de la provincia de residencia. NC (no consta)
 
 
 **fecha**
 
-Casos: En los casos anteriores al 11 de mayo, se utiliza la fecha de diagnóstico, en su
+  Casos: En los casos anteriores al 11 de mayo, se utiliza la fecha de diagnóstico, en su
 ausencia la fecha de declaración a la comunidad y, en su ausencia, la fecha clave (fecha
 usada para estadística por las CCAA). En los casos posteriores al 10 de mayo, en ausencia
 de fecha de diagnóstico se utiliza la fecha clave1.
@@ -31,18 +31,18 @@ defunción (en su defecto, la fecha de diagnóstico, y en su defecto la fecha cl
 
 **sexo** 
 
-Sexo de los casos: H (hombre), M (mujer), NC (no consta)
+  Sexo de los casos: H (hombre), M (mujer), NC (no consta)
 
 
 **grupo_edad** 
 
-Grupo de edad al que pertenece el caso: 0-9, 10-19, 20-29, 30-39, 40-49, 50-59, 60-69,
+  Grupo de edad al que pertenece el caso: 0-9, 10-19, 20-29, 30-39, 40-49, 50-59, 60-69,
 70-79, ≥80 años. NC: no consta. Después del 28 de Marzo solo grupos de más de 60 años
 
 
 **num_casos**
 
-Número de casos notificados confirmados con una prueba diagnóstica positiva de
+  Número de casos notificados confirmados con una prueba diagnóstica positiva de
 infección activa (PDIA) tal como se establece en la Estrategia de detección precoz,
 vigilancia y control de COVID-19 y además los casos notificados antes del 11 de mayo que
 requirieron hospitalización, ingreso en UCI o fallecieron con diagnóstico clínico de COVID19, de acuerdo a las definiciones de caso vigentes en cada momento.
@@ -50,45 +50,45 @@ requirieron hospitalización, ingreso en UCI o fallecieron con diagnóstico clí
 
 **num_hosp** 
 
-Número de casos hospitalizados
+  Número de casos hospitalizados
 
 
 **num_uci**
 
-Número de casosingresados en UCI
+  Número de casosingresados en UCI
 
 
 **num_def** 
 
-Número de defunciones
+  Número de defunciones
 
 **country_region_code**
 
-Código de España para google
+  Código de España para google
 
 
 **countr_region**
 
-Indica que el país es España
+  Indica que el país es España
 
 
 **sub_region_1**
 
-Nombre de la Comunidad autónoma
+  Nombre de la Comunidad autónoma
 
 
 **sub_region_2**
 
-Nombre de la Provincia
+  Nombre de la Provincia
 
 **iso_3166_2_code**
 
-Código iso de la provincia
+  Código iso de la provincia
 
 
 **place_id**
 
-ID del lugar
+  ID del lugar
 
 **date**
 
@@ -96,29 +96,29 @@ Columna duplicada de fecha
 
 **retail_and_recreation_percent_change_from_baseline**
 
-Porcentaje de cambio con respecto a una medida de referencia base en la afluencia de público a lugares de comercio y ocio
+  Porcentaje de cambio con respecto a una medida de referencia base en la afluencia de público a lugares de comercio y ocio
 
 
 **grocery_and_pharmacy_percent_change_from_baseline**
 
-Porcentaje de cambio con respecto a una medida de referencia base en la afluencia de público a lugares de supermercados y farmacia
+  Porcentaje de cambio con respecto a una medida de referencia base en la afluencia de público a lugares de supermercados y farmacia
 
 
 **parks_percent_change_from_baseline**
 
-Porcentaje de cambio con respecto a una medida de referencia base en la afluencia de público a parques
+  Porcentaje de cambio con respecto a una medida de referencia base en la afluencia de público a parques
 
 
 **transit_stations_percent_change_from_baseline**
 
-Porcentaje de cambio con respecto a una medida de referencia base en la afluencia de público estaciones de transporte
+  Porcentaje de cambio con respecto a una medida de referencia base en la afluencia de público estaciones de transporte
 
 
 **workplaces_percent_change_from_baseline**
 
-Porcentaje de cambio con respecto a una medida de referencia base en la afluencia de público estaciones a lugares de trabajo
+  Porcentaje de cambio con respecto a una medida de referencia base en la afluencia de público estaciones a lugares de trabajo
 
 
 **residential_percent_change_from_baseline**
 
-Porcentaje de cambio con respecto a una medida de referencia base en la afluencia de público estaciones a lugares de residencia
+  Porcentaje de cambio con respecto a una medida de referencia base en la afluencia de público estaciones a lugares de residencia
